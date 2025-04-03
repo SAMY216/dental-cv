@@ -1,7 +1,9 @@
+import image1 from "../data/cr-1-1.jpg";
+
 export var cr = [
   {
     imgs: [
-      "../data/cr-1-1.jpg",
+      image1,
       "../data/cr-1-2.jpg",
       "../data/cr-1-3.jpg",
       "../data/cr-1-4.jpg",
