@@ -1,3 +1,5 @@
+import landingPhoto from "../materials/landing-page.png";
+
 export default function LandingPage() {
   return (
     <div className="mx-auto flex flex-col lg:flex-row items-center justify-center h-screen bg-gray-900 lg:gap-x-24 pt-10">
@@ -16,7 +18,7 @@ export default function LandingPage() {
       <div className="hidden lg:block lg:w-1/2 h-full overflow-hidden flex justify-end">
         <img
           className="h-full object-cover"
-          src="../materials/landing-page.png"
+          src={landingPhoto}
           alt="Landing Page"
         />
       </div>
