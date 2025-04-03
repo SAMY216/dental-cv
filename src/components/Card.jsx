@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import image1 from "../data/cr-2-1.jpg";
+
 export default function Card({ caseData }) {
   const [isOpen, setIsOpen] = useState(false);
   const modalRef = useRef(null);
@@ -24,7 +24,7 @@ export default function Card({ caseData }) {
           {imagesToShow.map((imgSrc, j) => (
             <div key={j} className="relative">
               <img
-                src={image1}
+                src={import.meta.env.BASE_URL + imgSrc}
                 className="w-full h-auto object-cover rounded-md"
                 alt={`Case - Image ${j + 1}`}
               />
