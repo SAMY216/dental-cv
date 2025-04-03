@@ -24,7 +24,7 @@ export default function Card({ caseData }) {
           {imagesToShow.map((imgSrc, j) => (
             <div key={j} className="relative">
               <img
-                src={imgSrc}
+                src={import.meta.env.BASE_URL + imgSrc}
                 className="w-full h-auto object-cover rounded-md"
                 alt={`Case - Image ${j + 1}`}
               />
