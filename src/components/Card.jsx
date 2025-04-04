@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 
 export default function Card({ caseData }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -6,6 +6,19 @@ export default function Card({ caseData }) {
   const maxPhotos = 4;
   const imagesToShow = caseData.imgs.slice(0, maxPhotos);
   const extraImagesCount = caseData.imgs.length - maxPhotos;
+
+  // Lock background scroll when modal is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isOpen]);
 
   // Close modal when clicking outside
   const handleClickOutside = (e) => {

@@ -7,11 +7,12 @@ export default function LandingPage() {
         <h1 className="text-3xl md:text-4xl font-bold text-yellow-500">
           Samy Ahmed
         </h1>
-        <h2 className="text-xl md:text-2xl font-bold mt-5">
-          I'm a dental student in my last year
+        <h2 className="text-lg md:text-xl font-bold mt-0 opacity-70 text-slate-400">
+          Final-year dental student
         </h2>
-        <h2 className="text-xl md:text-2xl font-bold mt-5">
-          This is my CV containing some of the cases I have done
+        <h2 className="text-xl md:text-2xl mt-5">
+          This CV shows a selection of clinical cases I have managed and treated
+          as part of my undergraduate dental education.
         </h2>
       </div>
 
