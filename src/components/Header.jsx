@@ -43,7 +43,7 @@ export default function Header() {
 
       {/* Mobile Dropdown Menu */}
       <div
-        className={`lg:hidden absolute top-[80px] md:top-[100px] left-0 w-full bg-gray-800 py-4 shadow-2xl border-t border-gray-700 transition-all duration-300 transform origin-top ${
+        className={`lg:hidden absolute top-[80px] md:top-[100px] left-0 w-full bg-gray-800 py-4 shadow-2xl border-t border-gray-700 transition-all duration-300 transform origin-top z-10 ${
           isOpen ? "scale-y-100 opacity-100" : "scale-y-0 opacity-0"
         }`}
       >
