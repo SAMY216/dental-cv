@@ -11,19 +11,31 @@ export default function Card({ caseData }) {
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
+
+      // Push new state to history to allow back button to close modal
+      window.history.pushState({ modalOpen: true }, "");
+
+      const handlePopState = () => {
+        setIsOpen(false);
+      };
+
+      window.addEventListener("popstate", handlePopState);
+
+      return () => {
+        window.removeEventListener("popstate", handlePopState);
+        document.body.style.overflow = "auto";
+      };
     } else {
       document.body.style.overflow = "auto";
     }
-
-    return () => {
-      document.body.style.overflow = "auto";
-    };
   }, [isOpen]);
 
   // Close modal when clicking outside
   const handleClickOutside = (e) => {
     if (modalRef.current && !modalRef.current.contains(e.target)) {
       setIsOpen(false);
+      // Go back one step in history when closed by outside click
+      window.history.back();
     }
   };
 
@@ -68,7 +80,10 @@ export default function Card({ caseData }) {
             {/* Close Button */}
             <button
               className="absolute top-4 right-4 text-3xl font-bold text-gray-700 hover:text-red-500"
-              onClick={() => setIsOpen(false)}
+              onClick={() => {
+                setIsOpen(false);
+                window.history.back(); // Trigger back when closing with button
+              }}
             >
               &times;
             </button>
