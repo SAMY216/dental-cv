@@ -87,7 +87,7 @@ export var op = [
     ],
     name: "Eman Ahmed",
     age: 44,
-    case: "Class II Upper Right 5",
+    case: "Class II Upper Left 5",
     treatment: "Composite restoration",
     extraNotes: "Cotton roll isolation was used",
   },

@@ -14,6 +14,14 @@ export default function LandingPage() {
           This CV shows a selection of clinical cases I have managed and treated
           as part of my undergraduate dental education.
         </h2>
+        <i
+          className="fa-solid fa-circle-down fa-bounce fa-2xl mt-32 cursor-pointer text-white hover:text-cyan-400 duration-300"
+          onClick={() => {
+            document
+              .getElementById("operative")
+              ?.scrollIntoView({ behavior: "smooth" });
+          }}
+        ></i>
       </div>
 
       <div className="hidden lg:block lg:w-1/2 h-full overflow-hidden flex justify-end">

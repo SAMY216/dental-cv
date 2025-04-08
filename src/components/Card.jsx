@@ -30,7 +30,7 @@ export default function Card({ caseData }) {
   return (
     <>
       <div
-        className="h-auto overflow-hidden p-4 bg-gray-100 shadow-md rounded-lg cursor-pointer hover:shadow-2xl transition"
+        className="h-auto overflow-hidden p-4 bg-stone-200 shadow-md rounded-lg cursor-pointer hover:shadow-2xl transition"
         onClick={() => setIsOpen(true)}
       >
         <div className="grid grid-cols-2 w-full rounded-lg overflow-hidden gap-1 relative">
