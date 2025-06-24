@@ -33,6 +33,6 @@ export var cr = [
     case: "Missing lower left 6",
     treatment: "PFM bridge LL567",
     extraNotes:
-      "Occlusal anatomy was almost destroyed due to high spots removal☹️",
+      "Occlusal anatomy was almost destroyed due to high spots removal.",
   },
 ];
