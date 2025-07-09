@@ -8,7 +8,7 @@ export default function LandingPage() {
           Samy Ahmed
         </h1>
         <h2 className="text-lg md:text-xl font-bold mt-0 opacity-70 text-slate-400">
-          Final-year dental student
+          Intern dental student
         </h2>
         <h2 className="text-xl md:text-2xl mt-5">
           This CV shows a selection of clinical cases I have managed and treated
