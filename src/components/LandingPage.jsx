@@ -12,7 +12,7 @@ export default function LandingPage() {
         </h2>
         <h2 className="text-xl md:text-2xl mt-5">
           This CV shows a selection of clinical cases I have managed and treated
-          as part of my undergraduate dental education.
+          as part of my dental education.
         </h2>
         <i
           className="fa-solid fa-circle-down fa-bounce fa-2xl mt-32 cursor-pointer text-white hover:text-cyan-400 duration-300"
